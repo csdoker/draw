@@ -56,6 +56,9 @@ body{
 .colors> li.blue{
   background: blue;
 }
+.colors> li.black{
+  background: black;
+}
 .colors> li.active{
   box-shadow: 0 0 3px rgba(0,0,0,0.95);
   transform: scale(1.2);
@@ -68,10 +71,16 @@ body{
 .sizes > li {
   margin: 20px 0;
 }
+.sizes > .line{
+  height: 0;
+  width: 20px;
+  border-top: 2px solid black;
+}
+
 .sizes > .thin{
   height: 0;
   width: 20px;
-  border-top: 3px solid black;
+  border-top: 5px solid black;
 }
 .sizes > .thick{
   height: 0;
