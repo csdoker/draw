@@ -38,12 +38,14 @@ red.onclick = function(){
   red.classList.add('active')
   green.classList.remove('active')
   blue.classList.remove('active')
+  black.classList.remove('active')
 }
 green.onclick = function(){
   context.fillStyle = 'green'
   context.strokeStyle = 'green'
   red.classList.remove('active')
   green.classList.add('active')
+  black.classList.remove('active')
   blue.classList.remove('active')
 }
 blue.onclick = function(){
@@ -51,9 +53,21 @@ blue.onclick = function(){
   context.strokeStyle = 'blue'
   red.classList.remove('active')
   green.classList.remove('active')
+  black.classList.remove('active')
   blue.classList.add('active')
 }
+black.onclick = function(){
+  context.fillStyle = 'black'
+  context.strokeStyle = 'black'
+  red.classList.remove('active')
+  green.classList.remove('active')
+  blue.classList.remove('active')
+  black.classList.add('active')
+}
 
+line.onclick = function() {
+  lineWidth = 2
+}
 thin.onclick = function(){
   lineWidth = 5
 }
